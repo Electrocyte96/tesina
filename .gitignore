@@ -1,0 +1,37 @@
+#Algo de anaconda 
+/anaconda_projects/
+
+#Carpetas ocultas y .log
+.ipynb_checkpoints
+*.log
+
+#Todos los archivos enviados por el Dr. Hector
+/B_gal_haciendo mio elproyecto/
+
+#Bibliografia del Dr. Hector
+biblioteca_modif.bib
+
+#Archivos ocultos 
+/scripts/.*
+
+#archivos de latex en /Titulacion/Anteproyecto/
+/Titulacion/Anteproyecto/*.log
+/Titulacion/Anteproyecto/*.aux
+/Titulacion/Anteproyecto/*.bbl
+/Titulacion/Anteproyecto/*.bcf
+/Titulacion/Anteproyecto/*.blg
+/Titulacion/Anteproyecto/*.out
+/Titulacion/Anteproyecto/*.run.xml
+/Titulacion/Anteproyecto/*.synctex(busy).gz
+/Titulacion/Anteproyecto/*.synctex.gz
+
+#archivos de latex en /Titulacion/Tesina/
+/Titulacion/Tesina/*.log
+/Titulacion/Tesina/*.aux
+/Titulacion/Tesina/*.bbl
+/Titulacion/Tesina/*.bcf
+/Titulacion/Tesina/*.blg
+/Titulacion/Tesina/*.out
+/Titulacion/Tesina/*.run.xml
+/Titulacion/Tesina/*.synctex(busy).gz
+/Titulacion/Tesina/*.synctex.gz
