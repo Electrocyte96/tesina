@@ -1,0 +1,99 @@
+\thispagestyle{empty}
+
+\noindent
+\hspace*{.5cm} %pone un espacio horizontal a toda la hoja
+% makebox Crea una sola caja Ancho fijo = \textwidth, Alineada a la izquierda ([l])
+% el " % " evita que LaTeX inserte un espacio en blanco invisible justo antes de que empiece el tabular
+\makebox[\textwidth][l]{%
+	\begin{tabular}{@{}p{0.15\textwidth}@{\hspace{2cm}}p{0.75\textwidth}@{}}
+		%           @{}    elimina el padding interno automático        @{}                           
+		%            p{} = columna tipo parágrafo      =  p{}
+		%                               @{} reemplaza el espacio automático
+		%		         | ancho col izq | espacio |  ancho col der|
+		
+		
+		% columna izquierda
+		\centering
+		\vspace{0.1cm}
+		\includegraphics[width=2.5cm]{imagenes/escudo_unam.jpg}
+		
+		\vspace{0.6cm}
+		
+		\includegraphics[width=1.5cm, height=14cm]{imagenes/lineas_verticales.png}
+		
+		\vspace{1.7cm}
+		
+		\includegraphics[width=2.5cm]{imagenes/escudo_ciencias.jpg}
+		
+		& % & separa columnas
+		
+		% columna derecha
+		\centering
+		\vspace{0.1cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{UNIVERSIDAD NACIONAL AUTÓNOMA\\
+				DE MÉXICO}
+		}
+		
+		\vspace{0.7cm}
+		
+		\includegraphics[width=11cm]{imagenes/lineas_horizontales.png}
+		
+		\vspace{1.2cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{FACULTAD DE CIENCIAS}
+		}
+		
+		\vspace{2cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{(TÍTULO DE LA TESINA)}
+		}
+		
+		\vspace{2cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{T\hspace{1.5cm}E\hspace{1.5cm}S\hspace{1.5cm}I\hspace{1.5cm}N\hspace{1.5cm}A}
+		}
+		
+		\vspace{0.75cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{QUE\hspace{0.3cm}PARA\hspace{0.3cm}OBTENER\hspace{0.3cm}EL\hspace{0.3cm}TÍTULO\hspace{0.3cm}DE:}
+		}
+		
+		\vspace{0.3cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{B\hspace{0.7cm}I\hspace{0.7cm}Ó\hspace{0.7cm}L\hspace{0.7cm}O\hspace{0.7cm}G\hspace{0.7cm}O}
+		}
+		
+		\vspace{0.3cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{P\hspace{1cm}R\hspace{1cm}E\hspace{1cm}S\hspace{1cm}E\hspace{1cm}N\hspace{1cm}T\hspace{1cm}A:}
+		}
+		
+		\vspace{0.75cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{JESÚS\hspace{0.3cm}JACOB\hspace{0.3cm}GARCÍA\hspace{0.3cm}MEDRANO}
+		}
+		
+		\vspace{2cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{DIRECTOR DE TESINA:\\
+				DR. HÉCTOR GILBERTO VÁZQUEZ LÓPEZ}
+		}
+		
+		\vspace{0.6cm}
+		
+		{\fontsize{14pt}{16pt}\selectfont
+			\textbf{2026}
+		}
+		
+	\end{tabular}
+}

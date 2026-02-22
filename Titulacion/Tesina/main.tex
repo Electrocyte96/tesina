@@ -1,0 +1,32 @@
+\documentclass[12pt,letterpaper]{report}
+
+% ---------- Idioma ----------
+\usepackage[spanish]{babel}
+
+% ---------- Fuente (Times New Roman) ----------
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{geometry} % Controla márgenes
+\geometry{
+	top=2.5cm,
+	bottom=2.5cm,
+	left=3cm,
+	right=3cm
+}
+
+\usepackage{graphicx} %Permite insertar imágenes
+
+% ---------- Sin numeración en portada ----------
+\usepackage{setspace} %controla el interlineado
+
+\begin{document}
+	
+	\input{portada} %Inserta el archivo portada.tex
+	
+	\clearpage %Termina la página actual
+	\pagenumbering{arabic}
+	
+	% \input{capitulos/introduccion}
+	
+\end{document}

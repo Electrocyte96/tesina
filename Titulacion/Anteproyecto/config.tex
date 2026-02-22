@@ -1,0 +1,76 @@
+% -----------------------------
+% Idioma y codificación
+% -----------------------------
+\usepackage[spanish]{babel}
+
+% -----------------------------
+% Tipografía (Calibri)
+% -----------------------------
+\usepackage{fontspec}
+\setmainfont{Calibri}
+
+% -----------------------------
+% Márgenes
+% -----------------------------
+\usepackage{geometry}
+\geometry{
+	letterpaper,
+	left=2.5cm,
+	right=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm
+}
+
+% -----------------------------
+% Interlineado
+% -----------------------------
+\usepackage{setspace}
+\onehalfspacing
+
+% -----------------------------
+% Sin sangría, espacio entre párrafos
+% (muy común en anteproyectos)
+% -----------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+
+% -----------------------------
+% Hipervínculos (opcional pero recomendado)
+% -----------------------------
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black
+}
+
+\usepackage{titlesec}
+
+% --- Numeración de secciones SIN capítulo ---
+\renewcommand{\thesection}{\arabic{section}}
+
+% --- Formato del título ---
+\titleformat{\section}
+{\normalfont\bfseries}
+{\thesection.}
+{1em}
+{}
+
+% --- Sangría del título ---
+\titlespacing*{\section}
+{1.5em}  % sangría a la derecha
+{2.5ex}  % espacio antes
+{1.5ex}  % espacio después
+
+% --- para evitar main.tex: advertencia: : 'babel/polyglossia' detected but 'csquotes' missing.
+\usepackage{csquotes}
+
+% --- Para vincular Bibliografia ---
+\usepackage[
+	backend=biber, 
+	style=authoryear
+	]{biblatex}
+\addbibresource{bibliografia/referencias.bib}
+
+
