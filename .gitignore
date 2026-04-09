@@ -24,6 +24,7 @@ biblioteca_modif.bib
 /Titulacion/Anteproyecto/*.run.xml
 /Titulacion/Anteproyecto/*.synctex(busy).gz
 /Titulacion/Anteproyecto/*.synctex.gz
+/Titulacion/Anteproyecto/*.gz
 
 #archivos de latex en /Titulacion/Tesina/
 /Titulacion/Tesina/*.log
@@ -35,3 +36,4 @@ biblioteca_modif.bib
 /Titulacion/Tesina/*.run.xml
 /Titulacion/Tesina/*.synctex(busy).gz
 /Titulacion/Tesina/*.synctex.gz
+/Titulacion/Tesina/*.gz
