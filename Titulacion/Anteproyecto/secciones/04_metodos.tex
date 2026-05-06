@@ -6,22 +6,30 @@ Se utilizará la API de KEGG \parencite{Kanehisa_2004, Kanehisa_2022} para la ex
 \begin{itemize}
 	\item Extraer las secuencias del grupo K01220.
 	\item Realizar la limpieza de los datos.
-	\item Generar archivos de salida en formato FASTA.
+	\item Generar archivos de salida en formato FASTA (.fas).
 	\item Registrar el procesamiento y análisis de los datos.
 \end{itemize}
 Todo este código estará disponible en la liga \url{https://github.com/Electrocyte96/tesina/tree/main/scripts}
 
-\hspace{1cm}\textbf{Búsqueda de dominios conservados con dbCAN}
+\hspace{1cm}\textbf{Alineamiento múltiple de secuencias}
+Una vez obtenidas las secuencias en formato FASTA se utilizará el software MEGA11 \parencite{Tamura_2021} para realizar un alineamiento múltiple con el algoritmo MUSCLE \parencite{Edgar_2004} 
 
-Se utilizará la herramienta dbCAN \parencite{Zheng_2023, Zhang_2018, Huang_2017} para la anotación automática de carbohidratasas ya que esta integra tres herramientas importantes
+\hspace{1cm}\textbf{Búsqueda de dominios conservados con dbCAN}
+\textbf{Elaborar sobre dbcan tiene funciones como buscar Cazyme Gene Clusters (CGCs) and substrate predictions., pero tambien enzyme annotation, esta ultima la logra eso gracias a }
+Sobre las secuencias sin alinear se utilizará la herramienta dbCAN \parencite{Zheng_2023, Zhang_2018, Huang_2017}, usada para la anotación automática de carbohidratasas ya que esta integra tres herramientas importantes
 \begin{itemize}
 	\item HMMER: búsqueda por modelos ocultos de Markov 
 	\item DIAMOND: alineamiento por similitud de secuencia
 	\item dbCAN-sub: clasificación en subfamilias
 \end{itemize}
 
+
+Como resultado de este proceso podremos obtener una serie de archivos en formato de Valores Separados por Tabulaciones (.tsv) los cuales describirán los motivos reconocidos por 
+
 \hspace{1cm}\textbf{Generación de árboles de similitud}
+
+
 
 \hspace{1cm}\textbf{Análisis estructural con DALI}
 
-Se usará la herramienta en línea DALI server \parencite{Holm_2023} para el análisis estructural de proteínas basándose en un alineamiento de matrices de distancia \parencite{Holm_2019}. Es utilizada ampliamente por cristalógrafos para buscar parentescos de nuevas estructuras proteicas con otras proteínas previamente conocidas y almacenadas en las bases de datos del Protein Data Bank (PDB) y de AlphaFold Database \parencite{Holm_2022} a su vez de apoyarse en Pfam \parencite{Mistry_2020} para la anotación de proteínas.  
+Sobre las secuencias de interés se usará la herramienta en línea DALI server \parencite{Holm_2023} para el análisis estructural de proteínas basándose en un alineamiento de matrices de distancia \parencite{Holm_2019}. Es utilizada ampliamente por cristalógrafos para buscar parentescos de nuevas estructuras proteicas con otras proteínas previamente conocidas y almacenadas en las bases de datos del Protein Data Bank (PDB) y de AlphaFold Database \parencite{Holm_2022} a su vez de apoyarse en Pfam \parencite{Mistry_2020} para la anotación de proteínas.   
