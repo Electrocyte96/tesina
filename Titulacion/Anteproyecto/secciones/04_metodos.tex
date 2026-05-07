@@ -15,20 +15,14 @@ Todo este código estará disponible en la liga \url{https://github.com/Electroc
 Una vez obtenidas las secuencias en formato FASTA se utilizará el software MEGA11 \parencite{Tamura_2021} para realizar un alineamiento múltiple con el algoritmo MUSCLE \parencite{Edgar_2004} 
 
 \hspace{1cm}\textbf{Búsqueda de dominios conservados con dbCAN}
-\textbf{Elaborar sobre dbcan tiene funciones como buscar Cazyme Gene Clusters (CGCs) and substrate predictions., pero tambien enzyme annotation, esta ultima la logra eso gracias a }
-Sobre las secuencias sin alinear se utilizará la herramienta dbCAN \parencite{Zheng_2023, Zhang_2018, Huang_2017}, usada para la anotación automática de carbohidratasas ya que esta integra tres herramientas importantes
-\begin{itemize}
-	\item HMMER: búsqueda por modelos ocultos de Markov 
-	\item DIAMOND: alineamiento por similitud de secuencia
-	\item dbCAN-sub: clasificación en subfamilias
-\end{itemize}
 
+Sobre las secuencias sin alineamiento previo se usará la herramienta dbCAN \parencite{Zheng_2023, Zhang_2018, Huang_2017}. Esta plataforma permite identificar clústeres de genes relacionados con carbohidratasas (CGCs), también realizar predicción de substratos según una determinada secuencia de aminoácidos y  permite la anotación de carbohidratasas utilizando perfiles de dominio derivados de la base de datos CAZy (Carbohydrate-Active enZYmes Database). La anotación se llevó a cabo utilizando tres estrategias: búsquedas basadas en modelos ocultos de Markov mediante pyHMMER \parencite{Larralde_2023}, el cual es una implementación en Python/Cython de HMMER \parencite{Eddy_2011}; alineamientos de secuencia mediante DIAMOND \parencite{Buchfink_2021}; y clasificación en subfamilias mediante dbCAN-sub. Estas estrategias permiten detectar dominios conservados y asignar familias CAZy a cada secuencia analizada.
 
-Como resultado de este proceso podremos obtener una serie de archivos en formato de Valores Separados por Tabulaciones (.tsv) los cuales describirán los motivos reconocidos por 
+Como resultado de este proceso podremos obtener una serie de archivos en formato de Valores Separados por Tabulaciones (.tsv) los cuales describirán los motivos reconocidos por esta herramienta. 
 
 \hspace{1cm}\textbf{Generación de árboles de similitud}
 
-
+\parencite{Minh_2020, Wong_2025}
 
 \hspace{1cm}\textbf{Análisis estructural con DALI}
 
