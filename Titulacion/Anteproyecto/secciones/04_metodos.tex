@@ -1,7 +1,6 @@
 \section{Materiales y métodos}
 
 \hspace{1cm}\textbf{Extracción de las secuencias en del grupo K01220 en KEGG}
-
 Se utilizará la API de KEGG \parencite{Kanehisa_2004, Kanehisa_2022} para la extracción automática de datos. La documentación oficial está disponible en \url{https://www.kegg.jp/kegg/rest/}. Se desarrollarán scripts en Python (versión 3.12.7), implementados en notebooks de Jupyter (.ipynb), con el objetivo de:
 \begin{itemize}
 	\item Extraer las secuencias del grupo K01220.
@@ -12,18 +11,13 @@ Se utilizará la API de KEGG \parencite{Kanehisa_2004, Kanehisa_2022} para la ex
 Todo este código estará disponible en la liga \url{https://github.com/Electrocyte96/tesina/tree/main/scripts}
 
 \hspace{1cm}\textbf{Alineamiento múltiple de secuencias}
-Una vez obtenidas las secuencias en formato FASTA se utilizará el software MEGA11 \parencite{Tamura_2021} para realizar un alineamiento múltiple con el algoritmo MUSCLE \parencite{Edgar_2004} 
+Una vez obtenidas las secuencias en formato FASTA se utilizará el software MEGA11 \parencite{Tamura_2021} para realizar un alineamiento múltiple con el algoritmo MUSCLE \parencite{Edgar_2004}. El alineamiento permitirá evaluar la conservación de regiones homólogas entre las secuencias y detectar posibles secuencias divergentes dentro del grupo ortólogo analizado. 
 
 \hspace{1cm}\textbf{Búsqueda de dominios conservados con dbCAN}
+Sobre las secuencias sin alineamiento previo se usará la herramienta dbCAN \parencite{Zheng_2023, Zhang_2018, Huang_2017}. Esta plataforma permite identificar clústeres de genes relacionados con carbohidratasas (CGCs), también realizar predicción de substratos según una determinada secuencia de aminoácidos y  permite la anotación de carbohidratasas utilizando perfiles de dominio derivados de la base de datos CAZy (Carbohydrate-Active enZYmes Database). La anotación se llevó a cabo utilizando tres estrategias: búsquedas basadas en modelos ocultos de Markov mediante pyHMMER \parencite{Larralde_2023}, el cual es una implementación en Python/Cython de HMMER \parencite{Eddy_2011}; alineamientos de secuencia mediante DIAMOND \parencite{Buchfink_2021}; y clasificación en subfamilias mediante dbCAN-sub. Estas estrategias nos permitirán detectar dominios conservados y asignar familias CAZy a cada secuencia analizada y al final obtendremos estos resultados en archivos en formato de Valores Separados por Tabulaciones (.tsv).
 
-Sobre las secuencias sin alineamiento previo se usará la herramienta dbCAN \parencite{Zheng_2023, Zhang_2018, Huang_2017}. Esta plataforma permite identificar clústeres de genes relacionados con carbohidratasas (CGCs), también realizar predicción de substratos según una determinada secuencia de aminoácidos y  permite la anotación de carbohidratasas utilizando perfiles de dominio derivados de la base de datos CAZy (Carbohydrate-Active enZYmes Database). La anotación se llevó a cabo utilizando tres estrategias: búsquedas basadas en modelos ocultos de Markov mediante pyHMMER \parencite{Larralde_2023}, el cual es una implementación en Python/Cython de HMMER \parencite{Eddy_2011}; alineamientos de secuencia mediante DIAMOND \parencite{Buchfink_2021}; y clasificación en subfamilias mediante dbCAN-sub. Estas estrategias permiten detectar dominios conservados y asignar familias CAZy a cada secuencia analizada.
-
-Como resultado de este proceso podremos obtener una serie de archivos en formato de Valores Separados por Tabulaciones (.tsv) los cuales describirán los motivos reconocidos por esta herramienta. 
-
-\hspace{1cm}\textbf{Generación de árboles de similitud}
-
-\parencite{Minh_2020, Wong_2025}
+\hspace{1cm}\textbf{Generación de árboles filogenéticos}
+Para la inferencia filogenética se utilizará la herramienta IQ-TREE \parencite{Minh_2020, Wong_2025}. IQ-TREE permite la reconstrucción de árboles filogenéticos mediante métodos de máxima verosimilitud, incorporando selección automática de modelos evolutivos y estimación de soporte estadístico para las ramas. Su uso resulta adecuado debido a su eficiencia computacional y precisión en el análisis de secuencias proteicas homólogas, permitiendo evaluar las relaciones evolutivas entre las proteínas analizadas.
 
 \hspace{1cm}\textbf{Análisis estructural con DALI}
-
 Sobre las secuencias de interés se usará la herramienta en línea DALI server \parencite{Holm_2023} para el análisis estructural de proteínas basándose en un alineamiento de matrices de distancia \parencite{Holm_2019}. Es utilizada ampliamente por cristalógrafos para buscar parentescos de nuevas estructuras proteicas con otras proteínas previamente conocidas y almacenadas en las bases de datos del Protein Data Bank (PDB) y de AlphaFold Database \parencite{Holm_2022} a su vez de apoyarse en Pfam \parencite{Mistry_2020} para la anotación de proteínas.   
