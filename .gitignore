@@ -37,3 +37,15 @@ biblioteca_modif.bib
 /Titulacion/Tesina/*.synctex(busy).gz
 /Titulacion/Tesina/*.synctex.gz
 /Titulacion/Tesina/*.gz
+
+#archivos de latex en /Titulacion/Propuesta-proyecto/
+/Titulacion/Propuesta-proyecto/*.log
+/Titulacion/Propuesta-proyecto/*.aux
+/Titulacion/Propuesta-proyecto/*.bbl
+/Titulacion/Propuesta-proyecto/*.bcf
+/Titulacion/Propuesta-proyecto/*.blg
+/Titulacion/Propuesta-proyecto/*.out
+/Titulacion/Propuesta-proyecto/*.run.xml
+/Titulacion/Propuesta-proyecto/*.synctex(busy).gz
+/Titulacion/Propuesta-proyecto/*.synctex.gz
+/Titulacion/Propuesta-proyecto/*.gz
