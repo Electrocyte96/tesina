@@ -1,3 +1,6 @@
+#enviroment
+.venv/
+
 #Algo de anaconda 
 /anaconda_projects/
 
