@@ -1,15 +1,25 @@
-\documentclass[12pt,letterpaper]{report}
+\documentclass[11pt,letterpaper]{report} 
 
 \input{config}
 
-
 \begin{document}
 	
-	\input{00_portada} %Inserta el archivo portada.tex
+	\input{00_portada}
 	
-	\clearpage %Termina la página actual
+	\clearpage
 	\pagenumbering{arabic}
 	
-	% \input{capitulos/introduccion}
+	\tableofcontents 
+	\clearpage
+	
+	\listoffigures 
+	\clearpage
+	
+	\input{capitulos/02_introduccion}
+	\input{capitulos/03_objetivos}
+	\input{capitulos/04_desarrollo}
+
+		
+	\printbibliography[heading=bibintoc, title={Referencias}]
 	
 \end{document}

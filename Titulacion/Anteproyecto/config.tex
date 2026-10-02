@@ -65,11 +65,12 @@
 % --- para evitar main.tex: advertencia: : 'babel/polyglossia' detected but 'csquotes' missing.
 \usepackage{csquotes}
 
-% --- Para vincular Bibliografia ---
+% --- Para estilo de bibliografia y vincular Bibliografia ---
 \usepackage[
 	backend=biber, 
-	style=numeric
+	style=authoryear
 	]{biblatex}
+%\DeclareLanguageMapping{spanish}{spanish-apa}
 \addbibresource{bibliografia/referencias.bib}
 
 

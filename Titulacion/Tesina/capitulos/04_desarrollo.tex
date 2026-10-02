@@ -1,1 +1,47 @@
 \section{Desarrollo}
+
+\subsection{Materiales y métodos}
+La extracción de las secuencias, los datos de los organismos y el procesamiento de la información descargada se realizaron en cuadernillos de Python (archivos con extensión .ipynb y  referidos de aquí en adelante simplemente como cuadernillos) utilizando el entorno Jupyter Notebook v7.6.2 \parencite{Kluyver_Thomas_2016} sobre Python v3.10.0. El funcionamiento detallado del código se encuentra documentado dentro de cada archivo, y todos los recursos generados están disponibles en el repositorio:  \url{https://github.com/Electrocyte96/tesina/tree/main/scripts}.
+
+\subsubsection{Extracción de las secuencias}
+Con el fin de obtener las secuencias para todo el estudio se creó el cuadernillo \\<<\texttt{sequence\_extraction.ipynb}>> con la idea de hacer múltiples peticiones de tipo GET a la API de KEGG \parencite{Kanehisa_2004} para que al final se obtuviera un archivo de tipo valores separados por comas o texto (csv o txt respectivamente) con las secuencias. El archivo generado lleva por nombre <<\texttt{K01220.txt}>>. 
+
+\subsubsection{Extracción de los datos de los organismos}
+Con el propósito de complementar la información obtenida en el paso anterior se creó un cuadernillo llamado <<\texttt{all\_organisms.ipynb}>> que también se comunica a la API de KEGG \parencite{Kanehisa_2004}, hace una petición de tipo GET y obtiene datos de los organismos reportados en KEGG \parencite{Kanehisa_2004}, por ejemplo, el nombre científico, su filogenia (hasta cierto nivel), etc. Este procedimiento devuelve un archivo txt llamado <<\texttt{organismos.txt}>> que contiene la nueva información de los organismos, la idea detrás de esto es poder hacer mejores encabezados (headers) para cada secuencia en un archivo FASTA (fas).
+
+\subsubsection{Manipulación de las secuencias}
+Después de la extracción de las secuencias y datos de los organismos es necesario juntar esta  información para así generar los archivos fas para hacer análisis posteriores. Para esto se creó el cuadernillo \\<<\texttt{data\_wrangling.ipynb}>>, que como resultado genera dos archivos fas, con los datos del organismo en el header (con nombre científico y gen) y su respectiva secuencia, esta puede ser de aminoácidos o nucleótidos, para cada caso fueron llamados <<\texttt{k01220\_aa\_names.fas}>> y <<k01220\_nt\_names.fas>>. 
+
+\subsubsection{Alineamiento en MEGA}
+Para generación del alineamiento con las secuencias se utilizó el programa MEGA 11 \parencite{Tamura_2021}, se usaron los parámetros por default para el alineamiento y estos fueron los siguientes:
+\begin{itemize}
+	\item Algoritmo MUSCLE \parencite{Edgar_2004}.
+	\item Gap Open: -2.90.  
+	\item Gap Extend: 0.00.
+	\item Hydrophobicity Multiplier: 1.20.
+	\item Max Iterations: 16.
+	\item Cluster Method: UPGMA.
+\end{itemize}
+ Se realizó el alineamiento sobre las secuencias tanto de aminoácidos como de nucleótidos. Estos alineamientos se guardarán en nuevos archivos con nombre <<\texttt{k01220\_aa\_names\_aligned.fas}>> para el alineamiento de secuencias de aminoácidos y <<\texttt{k01220\_nt\_names\_aligned.fas}>> para el alineamiento de secuencias de nucleótidos.
+
+\subsubsection{Secuencia consenso}
+Para la obtención del una secuencia consenso a partir de todas las secuencias de aminoácidos guardadas en <<\texttt{k01220\_aa\_names\_aligned.fas}>> se creó el cuadernillo  <<\texttt{consensus\_sequences.ipynb}>>, donde se escribió el código necesario para la generación de una secuencia consenso. Los parámetros que se usaron para la obtención de esta secuencia fueron:
+\begin{itemize}
+	\item Un aminoácido debe estar presente en al menos el 50\% de las secuencias totales.
+	\item Si dos aminoácidos (o más) están empatados en la frecuencia de aparición a lo largo de todas las secuencias, entonces se agregará un gap (-).
+\end{itemize} 
+Al final se generaron un par de archivos, <<\texttt{consensus\_threshold\_50.fas}>> y \\ <<\texttt{consensus\_threshold\_50.txt}>>, ambas contienen la secuencia consenso la diferencia es que el archivo fas tiene header y un separador. De la misma forma se crearon dos versiones más de estos mismos archivos solo con la diferencia de que no contienen gaps (-) en la secuencia, a estos archivos se les llamó <<\texttt{consensus\_threshold\_50\_no\_gaps.fas}>> y  <<\texttt{consensus\_threshold\_50\_no\_gaps.txt}>>. 
+ 
+\subsubsection{Búsqueda en InterProScan}
+Una vez obtenida la secuencia consenso (ya sea con o sin gaps), se utilizó el servicio en línea de InterProScan \parencite{Blum_2026} versión  6.0.2.2 para la confirmación de su anotación, predicción de la arquitectura de dominios, familias de proteínas, motivos y sitios activos, etc. Este recurso es una de las herramientas pertenecientes a InterPro \parencite{Blum_2024} que funciona como un programa de clasificación de proteínas a gran escala. Al terminar el análisis, InterProScan \parencite{Blum_2026} nos devolvió todos los resultados de nuestra búsqueda, es decir, todas las coincidencias entre nuestra secuencia consenso y algunas bases de datos en las que se apoya InterProScan. Estos resultados estuvieron disponibles para descargarlos en un formato de texto conveniente (xml, json, tsv, entre otros). En este caso se decidió optar por el formato json y se le dio el nombre de <<\texttt{interproscan.json}>>. Posteriormente se creó el cuadernillo <<\texttt{interpro\_domains.ipynb}>> para la extracción de algunas regiones o aminoácidos de interés encontrados.  
+
+\subsubsection{Búsqueda en PDB}
+De la misma forma, la secuencia consenso libre de gaps se utilizó para iniciar una búsqueda de similitud (Sequence Similarity Search) en el Protein Data Bank (PDB) \parencite{Vallat_2025}. La plataforma PDB ejecuta esta búsqueda utilizando MMseqs2 \parencite{Steinegger_2017}, una serie ordenada de algoritmos que permiten el agrupamiento y alineamiento global de secuencias. Como resultado, se seleccionó el modelo con el mayor porcentaje de identidad (79\%), el cual correspondió a la estructura cristalográfica de la 6-fosfo-beta-galactosidasa (PDB ID: 1PBG) del organismo \textit{Lactococcus lactis} \parencite{Wiesmann_1995}. La entrada 1PBG consta de un homodímero (dos cadenas polipeptídicas) y conserva un ligando sulfato ($SO_4^{2-}$) cocristalizado en su estructura.
+
+Desde la entrada oficial de 1PBG se descargó el modelo de coordenadas atómicas en formato pdb (Legacy PDB). Debido a su naturaleza pública este archivo no se incluyó en el repositorio de la Tesina. Adicionalmente, se descargó la secuencia original del polipéptido cristalizado en formato FASTA, la cual se renombró como <<\texttt{1PBG\_sequence.fas}>> para los análisis posteriores.
+
+\subsubsection{Alineamiento de secuencia consenso Vs. secuencia de estructura PDB}
+De misma forma 
+
+
+\subsubsection{Visualización de estructuras o residuos}

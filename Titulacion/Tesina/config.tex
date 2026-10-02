@@ -1,27 +1,103 @@
-% ---------- Idioma ----------
-\usepackage[spanish]{babel}
-
-% ---------- Fuente (Times New Roman) ----------
-\usepackage{fontspec}
-\setmainfont{Times New Roman}
-
-\usepackage{geometry} % Controla márgenes
-\geometry{
-	top=2.5cm,
-	bottom=2.5cm,
-	left=3cm,
-	right=3cm
-}
-
-\usepackage{graphicx} %Permite insertar imágenes
-
-% ---------- Sin numeración en portada ----------
-\usepackage{setspace} %controla el interlineado
+% -----------------------------
+% Interlineado
+% -----------------------------
+\usepackage{setspace}
 \onehalfspacing
 
-% --- Para vincular Bibliografia ---
-%\usepackage[
-%backend=biber, 
-%style=numeric
-%]{biblatex}
-%\addbibresource{bibliografia/referencias.bib}
+% -----------------------------
+% Idioma y codificación
+% -----------------------------
+\usepackage[spanish]{babel}
+\usepackage{csquotes} % Recomendado para evitar advertencias con babel y biblatex
+\usepackage{caption} %esta cosa es importante porque resuleve el problema del idioma español y babel
+% -----------------------------
+% Tipografía (Calibri)
+% -----------------------------
+\usepackage{fontspec}
+\setmainfont{Calibri}
+
+% -----------------------------
+% Márgenes (Estilo Anteproyecto)
+% -----------------------------
+\usepackage{geometry}
+\geometry{
+	letterpaper,
+	left=2.5cm,
+	right=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm
+}
+
+% -----------------------------
+% Imágenes
+% -----------------------------
+\usepackage{graphicx} % Permite insertar imágenes	
+
+% -----------------------------
+% Párrafos (Sin sangría, espacio entre párrafos)
+% -----------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+
+% -----------------------------
+% Formato de Títulos
+% -----------------------------
+\usepackage{titlesec}
+
+% --- Numeración de secciones SIN capítulo ---
+\renewcommand{\thesection}{\arabic{section}}
+
+% --- Formato del título ---
+\titleformat{\section}
+{\normalfont\bfseries}
+{\thesection.}
+{1em}
+{}
+
+% --- Sangría del título ---
+\titlespacing*{\section}
+{1.5em}  % sangría a la derecha
+{2.5ex}  % espacio antes
+{1.5ex}  % espacio después
+
+% -----------------------------
+% Bibliografía (Formato APA)
+% -----------------------------
+\usepackage[
+backend=biber, 
+	style=apa % Cambiado a APA nativo para biblatex
+	]{biblatex}
+\addbibresource{bibliografia/referencias.bib}
+
+% -----------------------------
+% Hipervínculos
+% -----------------------------
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black
+}
+
+% -----------------------------
+% Profundidad del Índice y Numeración
+% -----------------------------
+% El número 3 le dice a LaTeX que llegue hasta \subsubsection (nivel 3)
+\setcounter{secnumdepth}{3} % Numera hasta sub-subsección (ej. 1.1.1)
+\setcounter{tocdepth}{3}    % Muestra hasta sub-subsección en el índice
+
+% -----------------------------
+% Formato y Tamaños de Títulos
+% -----------------------------
+\usepackage{titlesec}
+\renewcommand{\thesection}{\arabic{section}} % Hace que empiece en 1 y no en 0.1
+
+% 1. Sección: Letra grande (\Large)
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{1em}{}
+
+% 2. Subsección: Letra mediana (\large)
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection.}{1em}{}
+
+% 3. Sub-subsección: Letra normal (\normalsize)
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection.}{1em}{}
