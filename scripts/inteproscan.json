@@ -1,0 +1,2711 @@
+{
+  "interproscan-version" : "6.0.2.2",
+  "interpro-version" : "110.0",
+  "results" : [
+    {
+      "sequence" : "MKLPDFIFGGATAAYQAEGATTDGKGVAWDYLENYWYTAEPASDFYRYPVDLLEFGVNGIRISIAWSRIFPGGEVNPKGVEYYHLFAECHKRHVEPFVTLHHFDTPELHGDFLNRNIFVYAFCFEFEVYWTTFNEIGPIGDGQYLVGKFPPGIYDKVFQSHHNMMVAHARAVKLFKDGYGEIGVVHALPTKYPDPNPEDVRAAELEDIIHNKFILDATYLGYSETMEGVHILNGGLDEDFLAAKDLNDFLGINYYMSDWMAYDGEEIHNGTGKGSKYQKGVGRVPRTDWDWIYPQGLYDQIMRVKDYPNYKKIYITENGLGYKDEFDTVDDRIDYVKHLEVIDAIDGANVKGYFIWSLMDVFSWSNGYEKRYGLFYVDFETQERYPKKSAYWYKAETI",
+      "md5" : "7C99AB32B665F940F4AF0335F457CE61",
+      "matches" : [
+        {
+          "signature" : {
+            "accession" : "PIRSR617736-1",
+            "name" : "PIRSR617736-1",
+            "description" : null,
+            "type" : "Region",
+            "signatureLibraryRelease" : {
+              "library" : "PIRSR",
+              "version" : "2025_05"
+            },
+            "entry" : null
+          },
+          "model-ac" : "PIRSR617736-1",
+          "evalue" : 3.2E-76,
+          "score" : 242.6,
+          "source" : "PIRSR",
+          "locations" : [
+            {
+              "start" : 4,
+              "end" : 395,
+              "representative" : false,
+              "hmmStart" : 7,
+              "hmmEnd" : 443,
+              "hmmLength" : 452,
+              "hmmBounds" : "INCOMPLETE",
+              "evalue" : 3.2E-76,
+              "score" : 242.6,
+              "envelopeStart" : 1,
+              "envelopeEnd" : 397,
+              "location-fragments" : [
+                {
+                  "start" : 4,
+                  "end" : 395,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ],
+              "sites" : [
+                {
+                  "description" : "ACT_SITE: Proton donor",
+                  "numLocations" : 1,
+                  "siteLocations" : [
+                    {
+                      "start" : 135,
+                      "end" : 135,
+                      "residue" : "E"
+                    }
+                  ]
+                },
+                {
+                  "description" : "ACT_SITE: Nucleophile",
+                  "numLocations" : 1,
+                  "siteLocations" : [
+                    {
+                      "start" : 317,
+                      "end" : 317,
+                      "residue" : "E"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PIRSR617736-2",
+            "name" : "PIRSR617736-2",
+            "description" : null,
+            "type" : "Region",
+            "signatureLibraryRelease" : {
+              "library" : "PIRSR",
+              "version" : "2025_05"
+            },
+            "entry" : null
+          },
+          "model-ac" : "PIRSR617736-2",
+          "evalue" : 3.2E-76,
+          "score" : 242.6,
+          "source" : "PIRSR",
+          "locations" : [
+            {
+              "start" : 4,
+              "end" : 395,
+              "representative" : false,
+              "hmmStart" : 7,
+              "hmmEnd" : 443,
+              "hmmLength" : 452,
+              "hmmBounds" : "INCOMPLETE",
+              "evalue" : 3.2E-76,
+              "score" : 242.6,
+              "envelopeStart" : 1,
+              "envelopeEnd" : 397,
+              "location-fragments" : [
+                {
+                  "start" : 4,
+                  "end" : 395,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ],
+              "sites" : [
+                {
+                  "description" : "BINDING: Substrate",
+                  "numLocations" : 5,
+                  "siteLocations" : [
+                    {
+                      "start" : 16,
+                      "end" : 16,
+                      "residue" : "Q"
+                    },
+                    {
+                      "start" : 102,
+                      "end" : 102,
+                      "residue" : "H"
+                    },
+                    {
+                      "start" : 134,
+                      "end" : 134,
+                      "residue" : "N"
+                    },
+                    {
+                      "start" : 255,
+                      "end" : 255,
+                      "residue" : "Y"
+                    },
+                    {
+                      "start" : 356,
+                      "end" : 356,
+                      "residue" : "W"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PF00232",
+            "name" : "Glyco_hydro_1",
+            "description" : "Glycosyl hydrolase family 1",
+            "type" : "Domain",
+            "signatureLibraryRelease" : {
+              "library" : "Pfam",
+              "version" : "38.2"
+            },
+            "entry" : {
+              "accession" : "IPR001360",
+              "name" : "Glyco_hydro_1",
+              "description" : "Glycoside hydrolase family 1",
+              "type" : "Family",
+              "goXRefs" : [
+                {
+                  "name" : "hydrolase activity, hydrolyzing O-glycosyl compounds",
+                  "databaseName" : "GO",
+                  "category" : "MOLECULAR_FUNCTION",
+                  "id" : "GO:0004553"
+                },
+                {
+                  "name" : "carbohydrate metabolic process",
+                  "databaseName" : "GO",
+                  "category" : "BIOLOGICAL_PROCESS",
+                  "id" : "GO:0005975"
+                }
+              ],
+              "pathwayXRefs" : [
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654693"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-190374"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654689"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654712"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654733"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-6811558"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654726"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654219"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-6811558"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654719"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-1257604"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5673001"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9840310"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654693"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654228"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-109704"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-190374"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5673001"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654693"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654720"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654689"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654228"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654219"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654687"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-6811558"
+                },
+                {
+                  "name" : "Intestinal saccharidase deficiencies",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5659898"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654720"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5673001"
+                },
+                {
+                  "name" : "Constitutive Signaling by Aberrant PI3K in Cancer",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2219530"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654688"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-109704"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654719"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654687"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1257604"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1257604"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-190374"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654688"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654726"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654712"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654687"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654688"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-109704"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654219"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1307965"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654733"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654726"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654689"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1307965"
+                }
+              ]
+            }
+          },
+          "model-ac" : "PF00232",
+          "evalue" : 2.7E-104,
+          "score" : 360.9,
+          "source" : "Pfam",
+          "locations" : [
+            {
+              "start" : 5,
+              "end" : 395,
+              "representative" : false,
+              "hmmStart" : 8,
+              "hmmEnd" : 450,
+              "hmmLength" : 457,
+              "hmmBounds" : "INCOMPLETE",
+              "evalue" : 3.5E-104,
+              "score" : 360.5,
+              "envelopeStart" : 2,
+              "envelopeEnd" : 397,
+              "location-fragments" : [
+                {
+                  "start" : 5,
+                  "end" : 395,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PS00572",
+            "name" : "GLYCOSYL_HYDROL_F1_1",
+            "description" : "Glycosyl hydrolases family 1 active site",
+            "type" : "Conserved_site",
+            "signatureLibraryRelease" : {
+              "library" : "PROSITE patterns",
+              "version" : "2026_01"
+            },
+            "entry" : {
+              "accession" : "IPR018120",
+              "name" : "Glyco_hydro_1_AS",
+              "description" : "Glycoside hydrolase family 1, active site",
+              "type" : "Active_site",
+              "goXRefs" : [ ],
+              "pathwayXRefs" : [
+                {
+                  "name" : "Intestinal saccharidase deficiencies",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5659898"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-189085"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-189085"
+                }
+              ]
+            }
+          },
+          "model-ac" : "PS00572",
+          "source" : "PROSITE patterns",
+          "locations" : [
+            {
+              "start" : 313,
+              "end" : 321,
+              "representative" : false,
+              "level" : "STRONG",
+              "cigarAlignment" : "9M",
+              "alignment" : "IYITENGLG",
+              "location-fragments" : [
+                {
+                  "start" : 313,
+                  "end" : 321,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PS00653",
+            "name" : "GLYCOSYL_HYDROL_F1_2",
+            "description" : "Glycosyl hydrolases family 1 N-terminal signature",
+            "type" : "Conserved_site",
+            "signatureLibraryRelease" : {
+              "library" : "PROSITE patterns",
+              "version" : "2026_01"
+            },
+            "entry" : {
+              "accession" : "IPR033132",
+              "name" : "GH_1_N_CS",
+              "description" : "Glycosyl hydrolases family 1, N-terminal conserved site",
+              "type" : "Conserved_site",
+              "goXRefs" : [ ],
+              "pathwayXRefs" : [
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654693"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-190374"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654689"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-6811558"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654726"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654219"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-6811558"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-1257604"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5673001"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9840310"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654693"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654228"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-109704"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-190374"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5673001"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654693"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654689"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654219"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654687"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-6811558"
+                },
+                {
+                  "name" : "Intestinal saccharidase deficiencies",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5659898"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654720"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5673001"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654688"
+                },
+                {
+                  "name" : "Constitutive Signaling by Aberrant PI3K in Cancer",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2219530"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654719"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-109704"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654687"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1257604"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1257604"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-190374"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654688"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654726"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654712"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654687"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654688"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-109704"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654219"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654733"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654726"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654689"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1307965"
+                }
+              ]
+            }
+          },
+          "model-ac" : "PS00653",
+          "source" : "PROSITE patterns",
+          "locations" : [
+            {
+              "start" : 6,
+              "end" : 20,
+              "representative" : false,
+              "level" : "STRONG",
+              "cigarAlignment" : "1M1I2M1I1M1I4M1I1M1I1M",
+              "alignment" : "FiFGgAtAAYQaEgA",
+              "location-fragments" : [
+                {
+                  "start" : 6,
+                  "end" : 20,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PR00131",
+            "name" : "GLHYDRLASE1",
+            "description" : null,
+            "type" : "Family",
+            "signatureLibraryRelease" : {
+              "library" : "PRINTS",
+              "version" : "42.0"
+            },
+            "entry" : {
+              "accession" : "IPR001360",
+              "name" : "Glyco_hydro_1",
+              "description" : "Glycoside hydrolase family 1",
+              "type" : "Family",
+              "goXRefs" : [
+                {
+                  "name" : "hydrolase activity, hydrolyzing O-glycosyl compounds",
+                  "databaseName" : "GO",
+                  "category" : "MOLECULAR_FUNCTION",
+                  "id" : "GO:0004553"
+                },
+                {
+                  "name" : "carbohydrate metabolic process",
+                  "databaseName" : "GO",
+                  "category" : "BIOLOGICAL_PROCESS",
+                  "id" : "GO:0005975"
+                }
+              ],
+              "pathwayXRefs" : [
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654693"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-190374"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654689"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654712"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654733"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-6811558"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654726"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654219"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-6811558"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654719"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-1257604"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5673001"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9840310"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654693"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654228"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-109704"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-190374"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5673001"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654693"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654720"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654689"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654228"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654219"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654687"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-6811558"
+                },
+                {
+                  "name" : "Intestinal saccharidase deficiencies",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5659898"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654720"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5673001"
+                },
+                {
+                  "name" : "Constitutive Signaling by Aberrant PI3K in Cancer",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2219530"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654688"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-109704"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654719"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654687"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1257604"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1257604"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-190374"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654688"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654726"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654712"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654687"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654688"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-109704"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654219"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1307965"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654733"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654726"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654689"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1307965"
+                }
+              ]
+            }
+          },
+          "model-ac" : "PR00131",
+          "evalue" : 1.0E-19,
+          "graphscan" : "II.II",
+          "source" : "PRINTS",
+          "locations" : [
+            {
+              "start" : 246,
+              "end" : 260,
+              "representative" : false,
+              "pvalue" : 2.19E-6,
+              "score" : 44.18,
+              "motifNumber" : 1,
+              "location-fragments" : [
+                {
+                  "start" : 246,
+                  "end" : 260,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            },
+            {
+              "start" : 313,
+              "end" : 321,
+              "representative" : false,
+              "pvalue" : 1.33E-5,
+              "score" : 66.96,
+              "motifNumber" : 2,
+              "location-fragments" : [
+                {
+                  "start" : 313,
+                  "end" : 321,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            },
+            {
+              "start" : 347,
+              "end" : 364,
+              "representative" : false,
+              "pvalue" : 6.31E-9,
+              "score" : 57.19,
+              "motifNumber" : 4,
+              "location-fragments" : [
+                {
+                  "start" : 347,
+                  "end" : 364,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            },
+            {
+              "start" : 371,
+              "end" : 383,
+              "representative" : false,
+              "pvalue" : 3.65E-7,
+              "score" : 49.95,
+              "motifNumber" : 5,
+              "location-fragments" : [
+                {
+                  "start" : 371,
+                  "end" : 383,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "SSF51445",
+            "name" : null,
+            "description" : "(Trans)glycosidases",
+            "type" : "Homologous_superfamily",
+            "signatureLibraryRelease" : {
+              "library" : "SUPERFAMILY",
+              "version" : "1.75"
+            },
+            "entry" : {
+              "accession" : "IPR017853",
+              "name" : "GH_hydrolase_sf",
+              "description" : "Glycoside hydrolase superfamily",
+              "type" : "Homologous_superfamily",
+              "goXRefs" : [ ],
+              "pathwayXRefs" : [
+                {
+                  "name" : "Sialic acid metabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-4085001"
+                },
+                {
+                  "name" : "Keratan sulfate degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2022857"
+                },
+                {
+                  "name" : "Amino acid transport across the plasma membrane",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SCE-352230"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-190374"
+                },
+                {
+                  "name" : "Maturation of spike protein",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9694548"
+                },
+                {
+                  "name" : "Glycogen breakdown (glycogenolysis)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SCE-70221"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-2024101"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-6811558"
+                },
+                {
+                  "name" : "Reactions specific to the complex N-glycan synthesis pathway",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-975578"
+                },
+                {
+                  "name" : "MPS I - Hurler syndrome (CS/DS degradation)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9953038"
+                },
+                {
+                  "name" : "Interaction With Cumulus Cells And The Zona Pellucida",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2534343"
+                },
+                {
+                  "name" : "Reactions specific to the complex N-glycan synthesis pathway",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-975578"
+                },
+                {
+                  "name" : "MPS VII - Sly syndrome (CS/DS degradation)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9953080"
+                },
+                {
+                  "name" : "Amino acid transport across the plasma membrane",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-352230"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DME-6798695"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SPO-189085"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-109704"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-2024101"
+                },
+                {
+                  "name" : "Regulation of CDH1 posttranslational processing and trafficking to plasma membrane",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9768727"
+                },
+                {
+                  "name" : "Tryptophan catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-71240"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654687"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-109704"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654719"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CFA-2024101"
+                },
+                {
+                  "name" : "Keratan sulfate degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-2022857"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-2024101"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SSC-189085"
+                },
+                {
+                  "name" : "N-glycan trimming in the ER and Calnexin/Calreticulin cycle",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-532668"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654712"
+                },
+                {
+                  "name" : "Keratan sulfate degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-2022857"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654687"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-109704"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654219"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654726"
+                },
+                {
+                  "name" : "HS-GAG degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CFA-2024096"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SSC-2024101"
+                },
+                {
+                  "name" : "Maturation of spike protein",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9683686"
+                },
+                {
+                  "name" : "Reactions specific to the complex N-glycan synthesis pathway",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-975578"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-2024101"
+                },
+                {
+                  "name" : "Reactions specific to the complex N-glycan synthesis pathway",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-975578"
+                },
+                {
+                  "name" : "Keratan sulfate degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DDI-2022857"
+                },
+                {
+                  "name" : "Interaction With Cumulus Cells And The Zona Pellucida",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-2534343"
+                },
+                {
+                  "name" : "Regulation of CDH1 posttranslational processing and trafficking to plasma membrane",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-9768727"
+                },
+                {
+                  "name" : "Lysosomal oligosaccharide catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-8853383"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-1257604"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2024101"
+                },
+                {
+                  "name" : "HS-GAG degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-2024096"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-6798695"
+                },
+                {
+                  "name" : "Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DME-381426"
+                },
+                {
+                  "name" : "Post-translational protein phosphorylation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-8957275"
+                },
+                {
+                  "name" : "HS-GAG degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DME-2024096"
+                },
+                {
+                  "name" : "MPS IX - Natowicz syndrome (CS/DS degradation)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9953097"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SSC-6798695"
+                },
+                {
+                  "name" : "Trehalose biosynthesis",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MTU-868688"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654228"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654219"
+                },
+                {
+                  "name" : "Defective amino acid transport by SLC7A7 causes lysinuric protein intolerance (LPI)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5660862"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-6811558"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DDI-2024101"
+                },
+                {
+                  "name" : "MPS IIIB - Sanfilippo syndrome B",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2206282"
+                },
+                {
+                  "name" : "Hyaluronan degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-2160916"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5673001"
+                },
+                {
+                  "name" : "Constitutive Signaling by Aberrant PI3K in Cancer",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2219530"
+                },
+                {
+                  "name" : "Post-translational protein phosphorylation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-8957275"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-9840310"
+                },
+                {
+                  "name" : "Platelet degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-114608"
+                },
+                {
+                  "name" : "Glycogen breakdown (glycogenolysis)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-70221"
+                },
+                {
+                  "name" : "Defective SLC3A1 causes cystinuria (CSNU)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5619113"
+                },
+                {
+                  "name" : "Glycogen breakdown (glycogenolysis)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-70221"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SPO-6798695"
+                },
+                {
+                  "name" : "Basigin interactions",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-210991"
+                },
+                {
+                  "name" : "Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-381426"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654688"
+                },
+                {
+                  "name" : "Interaction With Cumulus Cells And The Zona Pellucida",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-2534343"
+                },
+                {
+                  "name" : "Lysosomal oligosaccharide catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-8853383"
+                },
+                {
+                  "name" : "Amino acid transport across the plasma membrane",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-352230"
+                },
+                {
+                  "name" : "Post-translational protein phosphorylation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DME-8957275"
+                },
+                {
+                  "name" : "Post-translational protein phosphorylation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-8957275"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-6798695"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1307965"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DME-189085"
+                },
+                {
+                  "name" : "Defective amino acid transport by SLC7A9 causes cystinuria (CSNU)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5660883"
+                },
+                {
+                  "name" : "Platelet degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DDI-114608"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654689"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-9840310"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654693"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654689"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654712"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654733"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654219"
+                },
+                {
+                  "name" : "Glycogen breakdown (glycogenolysis)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-70221"
+                },
+                {
+                  "name" : "Hyaluronan metabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-2142845"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-6798695"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-PFA-189085"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654719"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-6811558"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-189085"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5673001"
+                },
+                {
+                  "name" : "Glycogen synthesis",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-3322077"
+                },
+                {
+                  "name" : "Hyaluronan metabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-2142845"
+                },
+                {
+                  "name" : "Glycogen breakdown (glycogenolysis)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-70221"
+                },
+                {
+                  "name" : "MPS VII - Sly syndrome (Hyaluronan metabolism)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2206292"
+                },
+                {
+                  "name" : "Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-381426"
+                },
+                {
+                  "name" : "Reactions specific to the complex N-glycan synthesis pathway",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DDI-975578"
+                },
+                {
+                  "name" : "MPS IX - Natowicz syndrome (Hyaluronan metabolism)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2206280"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654228"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5673001"
+                },
+                {
+                  "name" : "Keratan sulfate degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-2022857"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654720"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654689"
+                },
+                {
+                  "name" : "Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-381426"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654687"
+                },
+                {
+                  "name" : "Hyaluronan metabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2142845"
+                },
+                {
+                  "name" : "Intestinal saccharidase deficiencies",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5659898"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654688"
+                },
+                {
+                  "name" : "Glycogen synthesis",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SCE-3322077"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-189085"
+                },
+                {
+                  "name" : "Glycogen storage disease type IV (GBE1)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-3878781"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1257604"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-9840310"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-190374"
+                },
+                {
+                  "name" : "HS-GAG degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2024096"
+                },
+                {
+                  "name" : "Platelet degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-114608"
+                },
+                {
+                  "name" : "Reactions specific to the complex N-glycan synthesis pathway",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DME-975578"
+                },
+                {
+                  "name" : "Hyaluronan degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DDI-2160916"
+                },
+                {
+                  "name" : "Developmental Lineage of Pancreatic Acinar Cells",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9925561"
+                },
+                {
+                  "name" : "Platelet degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-114608"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654726"
+                },
+                {
+                  "name" : "Defective HEXA causes GM2G1 (Hyaluronan metabolism)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-3656234"
+                },
+                {
+                  "name" : "Post-translational protein phosphorylation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-8957275"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SCE-6798695"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654733"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1307965"
+                },
+                {
+                  "name" : "CS/DS degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DME-2024101"
+                },
+                {
+                  "name" : "Tryptophan catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-71240"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-PFA-6798695"
+                },
+                {
+                  "name" : "Hyaluronan metabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-2142845"
+                },
+                {
+                  "name" : "Hyaluronan degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2160916"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DDI-9840310"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654726"
+                },
+                {
+                  "name" : "MPS IV - Morquio syndrome B (CS/DS degradation)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9953111"
+                },
+                {
+                  "name" : "Sialic acid metabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-4085001"
+                },
+                {
+                  "name" : "Basigin interactions",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-210991"
+                },
+                {
+                  "name" : "HS-GAG degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-2024096"
+                },
+                {
+                  "name" : "Platelet degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-114608"
+                },
+                {
+                  "name" : "Basigin interactions",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-210991"
+                },
+                {
+                  "name" : "Defective HEXB causes GM2G2 (Hyaluronan metabolism)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-3656248"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9840310"
+                },
+                {
+                  "name" : "N-glycan trimming and elongation in the cis-Golgi",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-964739"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SCE-189085"
+                },
+                {
+                  "name" : "MPS IV - Morquio syndrome B (Keratin metabolism)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2206308"
+                },
+                {
+                  "name" : "Hyaluronan degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-2160916"
+                },
+                {
+                  "name" : "Hyaluronan degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SSC-2160916"
+                },
+                {
+                  "name" : "Platelet degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-XTR-114608"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654693"
+                },
+                {
+                  "name" : "Glycogen breakdown (glycogenolysis)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-SPO-70221"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-190374"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654693"
+                },
+                {
+                  "name" : "Lysosomal oligosaccharide catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-8853383"
+                },
+                {
+                  "name" : "Glycogen storage disease type II (GAA)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5357609"
+                },
+                {
+                  "name" : "Calnexin/calreticulin cycle",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-901042"
+                },
+                {
+                  "name" : "Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-381426"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654720"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-6798695"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-189085"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DDI-6798695"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-9840310"
+                },
+                {
+                  "name" : "Neutrophil degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-BTA-6798695"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1257604"
+                },
+                {
+                  "name" : "Hyaluronan degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-2160916"
+                },
+                {
+                  "name" : "Defective NEU1 causes sialidosis",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-4341670"
+                },
+                {
+                  "name" : "Reactions specific to the complex N-glycan synthesis pathway",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-975578"
+                },
+                {
+                  "name" : "MPS I - Hurler syndrome (HS-GAG degradation)",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2206302"
+                },
+                {
+                  "name" : "Hyaluronan degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-CEL-2160916"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654688"
+                },
+                {
+                  "name" : "Association of TriC/CCT with target proteins during biosynthesis",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-390471"
+                },
+                {
+                  "name" : "Tryptophan catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-71240"
+                },
+                {
+                  "name" : "Platelet degranulation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-DRE-114608"
+                },
+                {
+                  "name" : "Lysosomal oligosaccharide catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-8853383"
+                },
+                {
+                  "name" : "Amino acid transport across the plasma membrane",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-352230"
+                },
+                {
+                  "name" : "Glycogen synthesis",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-3322077"
+                },
+                {
+                  "name" : "Keratan sulfate degradation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-2022857"
+                }
+              ]
+            }
+          },
+          "model-ac" : "0047025",
+          "source" : "SUPERFAMILY",
+          "locations" : [
+            {
+              "start" : 4,
+              "end" : 395,
+              "representative" : false,
+              "hmmLength" : 489,
+              "evalue" : 1.17E-90,
+              "location-fragments" : [
+                {
+                  "start" : 4,
+                  "end" : 395,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "G3DSA:3.20.20.80",
+            "name" : null,
+            "description" : "Glycosidases",
+            "type" : "Homologous_superfamily",
+            "signatureLibraryRelease" : {
+              "library" : "CATH-Gene3D",
+              "version" : "4.3.0"
+            },
+            "entry" : null
+          },
+          "model-ac" : "5jboA00",
+          "evalue" : 1.1E-96,
+          "score" : 326.2,
+          "source" : "CATH-Gene3D",
+          "locations" : [
+            {
+              "start" : 3,
+              "end" : 397,
+              "representative" : true,
+              "hmmStart" : 10,
+              "hmmEnd" : 472,
+              "hmmLength" : 485,
+              "hmmBounds" : "INCOMPLETE",
+              "evalue" : 1.4E-96,
+              "score" : 325.8,
+              "envelopeStart" : 3,
+              "envelopeEnd" : 397,
+              "location-fragments" : [
+                {
+                  "start" : 3,
+                  "end" : 397,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PTHR10353",
+            "name" : null,
+            "description" : null,
+            "type" : null,
+            "signatureLibraryRelease" : {
+              "library" : "PANTHER",
+              "version" : "19.0"
+            },
+            "entry" : null
+          },
+          "model-ac" : "PTHR10353",
+          "source" : "InterPro-N",
+          "locations" : [
+            {
+              "start" : 14,
+              "end" : 397,
+              "score" : 0.82813126,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 14,
+                  "end" : 397,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PF00232",
+            "name" : null,
+            "description" : null,
+            "type" : null,
+            "signatureLibraryRelease" : {
+              "library" : "Pfam",
+              "version" : "37.3"
+            },
+            "entry" : null
+          },
+          "model-ac" : "PF00232",
+          "source" : "InterPro-N",
+          "locations" : [
+            {
+              "start" : 136,
+              "end" : 397,
+              "score" : 0.9999529,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 136,
+                  "end" : 397,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            },
+            {
+              "start" : 5,
+              "end" : 104,
+              "score" : 0.9963198,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 5,
+                  "end" : 104,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PS00653",
+            "name" : null,
+            "description" : null,
+            "type" : null,
+            "signatureLibraryRelease" : {
+              "library" : "PROSITE patterns",
+              "version" : "2025_01"
+            },
+            "entry" : null
+          },
+          "model-ac" : "PS00653",
+          "source" : "InterPro-N",
+          "locations" : [
+            {
+              "start" : 6,
+              "end" : 20,
+              "score" : 0.9999047,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 6,
+                  "end" : 20,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PS00572",
+            "name" : null,
+            "description" : null,
+            "type" : null,
+            "signatureLibraryRelease" : {
+              "library" : "PROSITE patterns",
+              "version" : "2025_01"
+            },
+            "entry" : null
+          },
+          "model-ac" : "PS00572",
+          "source" : "InterPro-N",
+          "locations" : [
+            {
+              "start" : 313,
+              "end" : 321,
+              "score" : 0.98880047,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 313,
+                  "end" : 321,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PR00131",
+            "name" : null,
+            "description" : null,
+            "type" : null,
+            "signatureLibraryRelease" : {
+              "library" : "PRINTS",
+              "version" : "42.0"
+            },
+            "entry" : null
+          },
+          "model-ac" : "PR00131",
+          "source" : "InterPro-N",
+          "locations" : [
+            {
+              "start" : 313,
+              "end" : 321,
+              "score" : 0.9999465,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 313,
+                  "end" : 321,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            },
+            {
+              "start" : 246,
+              "end" : 260,
+              "score" : 0.9998389,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 246,
+                  "end" : 260,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            },
+            {
+              "start" : 347,
+              "end" : 364,
+              "score" : 0.99981564,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 347,
+                  "end" : 364,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            },
+            {
+              "start" : 371,
+              "end" : 383,
+              "score" : 0.9986923,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 371,
+                  "end" : 383,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "SSF51445",
+            "name" : null,
+            "description" : null,
+            "type" : null,
+            "signatureLibraryRelease" : {
+              "library" : "SUPERFAMILY",
+              "version" : "1.75"
+            },
+            "entry" : null
+          },
+          "model-ac" : "SSF51445",
+          "source" : "InterPro-N",
+          "locations" : [
+            {
+              "start" : 4,
+              "end" : 396,
+              "score" : 0.99694437,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 4,
+                  "end" : 396,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "G3DSA:3.20.20.80",
+            "name" : null,
+            "description" : null,
+            "type" : null,
+            "signatureLibraryRelease" : {
+              "library" : "CATH-Gene3D",
+              "version" : "4.3.0"
+            },
+            "entry" : null
+          },
+          "model-ac" : "G3DSA:3.20.20.80",
+          "source" : "InterPro-N",
+          "locations" : [
+            {
+              "start" : 127,
+              "end" : 397,
+              "score" : 0.99703014,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 127,
+                  "end" : 397,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            },
+            {
+              "start" : 4,
+              "end" : 130,
+              "score" : 0.9804566,
+              "representative" : false,
+              "location-fragments" : [
+                {
+                  "start" : 4,
+                  "end" : 130,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "signature" : {
+            "accession" : "PTHR10353",
+            "name" : null,
+            "description" : "GLYCOSYL HYDROLASE",
+            "type" : "Family",
+            "signatureLibraryRelease" : {
+              "library" : "PANTHER",
+              "version" : "19.0"
+            },
+            "entry" : {
+              "accession" : "IPR001360",
+              "name" : "Glyco_hydro_1",
+              "description" : "Glycoside hydrolase family 1",
+              "type" : "Family",
+              "goXRefs" : [
+                {
+                  "name" : "hydrolase activity, hydrolyzing O-glycosyl compounds",
+                  "databaseName" : "GO",
+                  "category" : "MOLECULAR_FUNCTION",
+                  "id" : "GO:0004553"
+                },
+                {
+                  "name" : "carbohydrate metabolic process",
+                  "databaseName" : "GO",
+                  "category" : "BIOLOGICAL_PROCESS",
+                  "id" : "GO:0005975"
+                }
+              ],
+              "pathwayXRefs" : [
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654693"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-190374"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654689"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654712"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654733"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-6811558"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654726"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654219"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-6811558"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654719"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-1257604"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5673001"
+                },
+                {
+                  "name" : "Glycosphingolipid catabolism",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-9840310"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654693"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654228"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-109704"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-190374"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5673001"
+                },
+                {
+                  "name" : "FRS-mediated FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654693"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654720"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654689"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade, FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654228"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654219"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654687"
+                },
+                {
+                  "name" : "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-6811558"
+                },
+                {
+                  "name" : "Intestinal saccharidase deficiencies",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5659898"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654720"
+                },
+                {
+                  "name" : "Digestion of dietary carbohydrate",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-189085"
+                },
+                {
+                  "name" : "RAF/MAP kinase cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5673001"
+                },
+                {
+                  "name" : "Constitutive Signaling by Aberrant PI3K in Cancer",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-2219530"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654688"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-109704"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR4",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654719"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654687"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1257604"
+                },
+                {
+                  "name" : "PIP3 activates AKT signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1257604"
+                },
+                {
+                  "name" : "FGFR1c and Klotho ligand binding and activation",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-190374"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654688"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654726"
+                },
+                {
+                  "name" : "FRS-mediated FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654712"
+                },
+                {
+                  "name" : "Downstream signaling of activated FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-5654687"
+                },
+                {
+                  "name" : "SHC-mediated cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654688"
+                },
+                {
+                  "name" : "PI3K Cascade",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-109704"
+                },
+                {
+                  "name" : "Phospholipase C-mediated cascade: FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654219"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-HSA-1307965"
+                },
+                {
+                  "name" : "Negative regulation of FGFR4 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654733"
+                },
+                {
+                  "name" : "Negative regulation of FGFR1 signaling",
+                  "databaseName" : "Reactome",
+                  "id" : "R-RNO-5654726"
+                },
+                {
+                  "name" : "PI-3K cascade:FGFR1",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-5654689"
+                },
+                {
+                  "name" : "betaKlotho-mediated ligand binding",
+                  "databaseName" : "Reactome",
+                  "id" : "R-MMU-1307965"
+                }
+              ]
+            }
+          },
+          "model-ac" : "PTHR10353",
+          "name" : "GLYCOSYL HYDROLASE",
+          "evalue" : 3.4E-70,
+          "score" : 248.5,
+          "proteinClass" : null,
+          "graftPoint" : null,
+          "ancestralNode" : null,
+          "goXRefs" : [ ],
+          "source" : "PANTHER",
+          "locations" : [
+            {
+              "start" : 7,
+              "end" : 394,
+              "representative" : true,
+              "evalue" : 4.2E-70,
+              "score" : 248.2,
+              "hmmStart" : 6,
+              "hmmEnd" : 433,
+              "hmmLength" : 447,
+              "hmmBounds" : "INCOMPLETE",
+              "envelopeStart" : 1,
+              "envelopeEnd" : 397,
+              "location-fragments" : [
+                {
+                  "start" : 7,
+                  "end" : 394,
+                  "dc-status" : "CONTINUOUS"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "xref" : [
+        {
+          "name" : "threshold 50",
+          "id" : "threshold"
+        }
+      ]
+    }
+  ]
+}
