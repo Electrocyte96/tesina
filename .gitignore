@@ -3,6 +3,7 @@
 
 #Algo de anaconda 
 /anaconda_projects/
+/scripts/anaconda_projects/
 
 #Carpetas ocultas y .log
 .ipynb_checkpoints
@@ -40,6 +41,8 @@ biblioteca_modif.bib
 /Titulacion/Tesina/*.synctex(busy).gz
 /Titulacion/Tesina/*.synctex.gz
 /Titulacion/Tesina/*.gz
+/Titulacion/Tesina/*.toc
+/Titulacion/Tesina/*.lof
 
 #archivos de latex en /Titulacion/Propuesta-proyecto/
 /Titulacion/Propuesta-proyecto/*.log
